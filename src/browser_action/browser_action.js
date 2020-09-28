@@ -56,7 +56,7 @@ function format_html_per_news_source(news_name,news_link,document) {
         let elmnt;
 
         // Change the header text
-        document.getElementsByClassName('default')[0].innerHTML  = "Consider reading related articles from these news sources.";
+        document.getElementsByClassName('default')[0].innerHTML  = "Consider reading related articles from these news sources. Click to go to Google search.";
 
         // Get the event_list container
         let article_list = document.getElementById("article_list");
