@@ -8,6 +8,36 @@ chrome.runtime.onMessage.addListener((msg, sender) => {
 	}
 })
 
+function format_html_per_news_source(news_name,news_link,document) {
+
+  var elmnt = document.createElement("div")
+  elmnt.setAttribute("class", "newsOrg");
+
+  // Conatiner for name + dropdown
+  var name = document.createElement("button");
+  name.innerHTML = news_name;
+  name.setAttribute("class", "name");
+
+  // create a link to the relevant search
+  var link = document.createElement("div");
+  link.setAttribute("class", "link");
+
+  var link_ref = document.createElement("a");
+  // Open a blank tab when the link is clicked.
+  link_ref.innerHTML = news_name;
+  link_ref.setAttribute("target", "_blank");
+  link_ref.setAttribute("href", 'https://'.concat(news_link));
+
+  link.appendChild(link_ref)
+
+  // Put the score and link to the element
+  elmnt.appendChild(name);
+  elmnt.appendChild(link);
+
+  // return the element
+  return elmnt
+
+}
  
 
   chrome.runtime.onMessage.addListener((msg, sender) => {
@@ -16,54 +46,33 @@ chrome.runtime.onMessage.addListener((msg, sender) => {
         
 
 		console.log('articles recieved')
-		console.log(msg)
+    console.log(msg)
+    
+        // Change the header text
+        document.getElementsByClassName('default')[0].innerHTML  = "Consider reading related articles from these news sources.";
 
-         // Get the event_list container
+        // Get the event_list container
         let article_list = document.getElementById("article_list");
 
         // get the json output
-        let articles_json = msg.message
+        let articles_json = msg.message;
 
-        console.log(articles_json)
+        console.log(articles_json);
 
-        let abcnews = articles_json['abcnews.go.com']
-
-        var elmnt = document.createElement("div")
-        elmnt.setAttribute("class", "newsOrg");
+        let abcnews = articles_json['abcnews.go.com'];
 
         // set the news org info
         var news_name = 'abcnews';
         var news_link = abcnews;
 
-        console.log(news_name)
-        console.log(news_link)
+        console.log(news_name);
+        console.log(news_link);
 
-        // Change the header text
-        document.getElementsByClassName('default')[0].innerHTML  = "Consider reading related articles from these news sources.";
-
-        // Conatiner for name + dropdown
-        var name = document.createElement("button");
-        name.innerHTML = news_name;
-        name.setAttribute("class", "name");
-
-        // create a link to the relevant search
-        var link = document.createElement("div");
-        link.setAttribute("class", "link");
-
-        var link_ref = document.createElement("a");
-        // Open a blank tab when the link is clicked.
-        link_ref.innerHTML = news_name;
-        link_ref.setAttribute("target", "_blank");
-        link_ref.setAttribute("href", 'https://'.concat(news_link));
-
-        link.appendChild(link_ref)
-
-        // Put the score and link to the element
-        elmnt.appendChild(name);
-        elmnt.appendChild(link);
+        // get new element for this news org
+        let elmnt = format_html_per_news_source(news_name,news_link,document) 
 
         // Append the new element to the list.
-        article_list.appendChild(elmnt);     
+        article_list.appendChild(elmnt);  
 
         let aljazeera = articles_json['aljazeera.com']
         let apnews = articles_json['apnews.com']
