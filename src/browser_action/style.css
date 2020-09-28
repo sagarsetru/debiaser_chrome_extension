@@ -16,7 +16,7 @@ body {
   position: relative;
 }
 
-.charity_container {
+.article_container {
   /*display: none;*/
   /*display: block;*/
   /*left: 0;*/
@@ -81,23 +81,23 @@ h4 {
   text-decoration: none;
 }*/
 
-.charity-content {
+.article-content {
   display: none;
   position: absolute;
-  background-color: #B03F59;
+  background-color: #59337c;
   min-width: 160px;
   color: #F5EDEE;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
 }
 
-.charity {
+.article {
   background-color: white;
   padding: 10px 10px 10px 10px;
 }
 
-.charity:hover {
-  background-color: #B03F59;
+.article:hover {
+  background-color: #59337c;
   text-decoration: none;
 }
 
@@ -105,7 +105,7 @@ h4 {
   font-size: 20px;
   font-style: bold;
   background-color: white;
-  color: #009FB7;
+  color: #000000;
   display: block;
   padding: 0px 10px 4px 10px;
   border: none;
@@ -120,26 +120,18 @@ h4 {
 .link {
   font-size: 16px;
   background-color: white;
-  color: #B03F59;
+  color: #59337c;
   padding: 0px 10px 4px 10px;
 }
 .link a{
   
   background-color: white;
-  color: #B03F59;
+  color: #59337c;
   display: block;
   text-decoration: none;
 }
 
-.charityinfo {
-  font-size: 14px;
-  font-style: bold;
-  background-color: white;
-  color: #2E293B;
-  display: block;
-  padding: 0px 10px 4px 10px;
-  text-decoration: none;
-}
+
 
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
 /*.active, .name:hover {
@@ -147,7 +139,7 @@ h4 {
 }*/
 .panel {
   padding: 0 18px;
-  background-color: #B03F59;
+  background-color: #59337c;
   color: #F5EDEE;
   display: none;
   overflow: hidden;

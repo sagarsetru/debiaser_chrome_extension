@@ -31,9 +31,13 @@ function format_html_per_news_source(news_name,news_link,document) {
 
   link.appendChild(link_ref);
 
+  var panel = document.createElement("div");
+  panel.setAttribute("class", "panel");
+
   // Put the score and link to the element
   elmnt.appendChild(name);
   elmnt.appendChild(link);
+  elmnt.appendChild(panel);
 
   // return the element
   return elmnt;
@@ -654,7 +658,7 @@ function format_html_per_news_source(news_name,news_link,document) {
         // Append the new element to the list.
         article_list.appendChild(elmnt);
 
-        
+
             var acc = document.getElementsByClassName("name");
             var i;
 
