@@ -35,7 +35,7 @@ function format_html_per_news_source(news_name,news_link,document) {
   panel.setAttribute("class", "panel");
 
   // Put the score and link to the element
-  elmnt.appendChild(name);
+  // elmnt.appendChild(name);
   elmnt.appendChild(link);
   elmnt.appendChild(panel);
 
@@ -52,6 +52,9 @@ function format_html_per_news_source(news_name,news_link,document) {
 		console.log('articles recieved')
     console.log(msg)
     
+        // initialize element output from fxn
+        let elmnt;
+
         // Change the header text
         document.getElementsByClassName('default')[0].innerHTML  = "Consider reading related articles from these news sources.";
 
@@ -76,7 +79,7 @@ function format_html_per_news_source(news_name,news_link,document) {
         console.log(news_link);
 
         // get new element for this news org
-        let elmnt = format_html_per_news_source(news_name,news_link,document) 
+        elmnt = format_html_per_news_source(news_name,news_link,document) 
 
         // Append the new element to the list.
         article_list.appendChild(elmnt);  
@@ -93,7 +96,7 @@ function format_html_per_news_source(news_name,news_link,document) {
         console.log(news_link);
 
         // get new element for this news org
-        let elmnt = format_html_per_news_source(news_name,news_link,document) 
+        elmnt = format_html_per_news_source(news_name,news_link,document) 
 
         // Append the new element to the list.
         article_list.appendChild(elmnt);  
@@ -110,7 +113,7 @@ function format_html_per_news_source(news_name,news_link,document) {
         console.log(news_link);
 
         // get new element for this news org
-        let elmnt = format_html_per_news_source(news_name,news_link,document) 
+        elmnt = format_html_per_news_source(news_name,news_link,document) 
 
         // Append the new element to the list.
         article_list.appendChild(elmnt);  
@@ -128,7 +131,7 @@ function format_html_per_news_source(news_name,news_link,document) {
         console.log(news_link);
 
         // get new element for this news org
-        let elmnt = format_html_per_news_source(news_name,news_link,document) 
+        elmnt = format_html_per_news_source(news_name,news_link,document) 
 
         // Append the new element to the list.
         article_list.appendChild(elmnt);  
@@ -145,7 +148,7 @@ function format_html_per_news_source(news_name,news_link,document) {
         console.log(news_link);
 
         // get new element for this news org
-        let elmnt = format_html_per_news_source(news_name,news_link,document) 
+        elmnt = format_html_per_news_source(news_name,news_link,document) 
 
         // Append the new element to the list.
         article_list.appendChild(elmnt);  
@@ -162,7 +165,7 @@ function format_html_per_news_source(news_name,news_link,document) {
         console.log(news_link);
 
         // get new element for this news org
-        let elmnt = format_html_per_news_source(news_name,news_link,document) 
+        elmnt = format_html_per_news_source(news_name,news_link,document) 
 
         // Append the new element to the list.
         article_list.appendChild(elmnt);
@@ -177,7 +180,7 @@ function format_html_per_news_source(news_name,news_link,document) {
         console.log(news_link);
 
         // get new element for this news org
-        let elmnt = format_html_per_news_source(news_name,news_link,document) 
+        elmnt = format_html_per_news_source(news_name,news_link,document) 
 
         // Append the new element to the list.
         article_list.appendChild(elmnt);
@@ -194,7 +197,7 @@ function format_html_per_news_source(news_name,news_link,document) {
         console.log(news_link);
 
         // get new element for this news org
-        let elmnt = format_html_per_news_source(news_name,news_link,document) 
+        elmnt = format_html_per_news_source(news_name,news_link,document) 
 
         // Append the new element to the list.
         article_list.appendChild(elmnt);
@@ -211,7 +214,7 @@ function format_html_per_news_source(news_name,news_link,document) {
         console.log(news_link);
 
         // get new element for this news org
-        let elmnt = format_html_per_news_source(news_name,news_link,document) 
+        elmnt = format_html_per_news_source(news_name,news_link,document) 
 
         // Append the new element to the list.
         article_list.appendChild(elmnt);
@@ -228,7 +231,7 @@ function format_html_per_news_source(news_name,news_link,document) {
         console.log(news_link);
 
         // get new element for this news org
-        let elmnt = format_html_per_news_source(news_name,news_link,document) 
+        elmnt = format_html_per_news_source(news_name,news_link,document) 
 
         // Append the new element to the list.
         article_list.appendChild(elmnt);
@@ -245,7 +248,7 @@ function format_html_per_news_source(news_name,news_link,document) {
         console.log(news_link);
 
         // get new element for this news org
-        let elmnt = format_html_per_news_source(news_name,news_link,document) 
+        elmnt = format_html_per_news_source(news_name,news_link,document) 
 
         // Append the new element to the list.
         article_list.appendChild(elmnt);
@@ -263,7 +266,7 @@ function format_html_per_news_source(news_name,news_link,document) {
         console.log(news_link);
 
         // get new element for this news org
-        let elmnt = format_html_per_news_source(news_name,news_link,document) 
+        elmnt = format_html_per_news_source(news_name,news_link,document) 
 
         // Append the new element to the list.
         article_list.appendChild(elmnt);
@@ -274,13 +277,13 @@ function format_html_per_news_source(news_name,news_link,document) {
 
         // set the news org info
         var news_name = 'Democracy Now';
-        var news_link = democracy_now;
+        var news_link = democracynow;
 
         console.log(news_name);
         console.log(news_link);
 
         // get new element for this news org
-        let elmnt = format_html_per_news_source(news_name,news_link,document) 
+        elmnt = format_html_per_news_source(news_name,news_link,document) 
 
         // Append the new element to the list.
         article_list.appendChild(elmnt);
@@ -298,7 +301,7 @@ function format_html_per_news_source(news_name,news_link,document) {
         console.log(news_link);
 
         // get new element for this news org
-        let elmnt = format_html_per_news_source(news_name,news_link,document) 
+        elmnt = format_html_per_news_source(news_name,news_link,document) 
 
         // Append the new element to the list.
         article_list.appendChild(elmnt);
@@ -315,7 +318,7 @@ function format_html_per_news_source(news_name,news_link,document) {
         console.log(news_link);
 
         // get new element for this news org
-        let elmnt = format_html_per_news_source(news_name,news_link,document) 
+        elmnt = format_html_per_news_source(news_name,news_link,document) 
 
         // Append the new element to the list.
         article_list.appendChild(elmnt);
@@ -333,7 +336,7 @@ function format_html_per_news_source(news_name,news_link,document) {
         console.log(news_link);
 
         // get new element for this news org
-        let elmnt = format_html_per_news_source(news_name,news_link,document) 
+        elmnt = format_html_per_news_source(news_name,news_link,document) 
 
         // Append the new element to the list.
         article_list.appendChild(elmnt);
@@ -351,7 +354,7 @@ function format_html_per_news_source(news_name,news_link,document) {
         console.log(news_link);
 
         // get new element for this news org
-        let elmnt = format_html_per_news_source(news_name,news_link,document) 
+        elmnt = format_html_per_news_source(news_name,news_link,document) 
 
         // Append the new element to the list.
         article_list.appendChild(elmnt);
@@ -369,7 +372,7 @@ function format_html_per_news_source(news_name,news_link,document) {
         console.log(news_link);
 
         // get new element for this news org
-        let elmnt = format_html_per_news_source(news_name,news_link,document) 
+        elmnt = format_html_per_news_source(news_name,news_link,document) 
 
         // Append the new element to the list.
         article_list.appendChild(elmnt);
@@ -387,7 +390,7 @@ function format_html_per_news_source(news_name,news_link,document) {
         console.log(news_link);
 
         // get new element for this news org
-        let elmnt = format_html_per_news_source(news_name,news_link,document) 
+        elmnt = format_html_per_news_source(news_name,news_link,document) 
 
         // Append the new element to the list.
         article_list.appendChild(elmnt);
@@ -405,7 +408,7 @@ function format_html_per_news_source(news_name,news_link,document) {
         console.log(news_link);
 
         // get new element for this news org
-        let elmnt = format_html_per_news_source(news_name,news_link,document) 
+        elmnt = format_html_per_news_source(news_name,news_link,document) 
 
         // Append the new element to the list.
         article_list.appendChild(elmnt);
@@ -423,7 +426,7 @@ function format_html_per_news_source(news_name,news_link,document) {
         console.log(news_link);
 
         // get new element for this news org
-        let elmnt = format_html_per_news_source(news_name,news_link,document) 
+        elmnt = format_html_per_news_source(news_name,news_link,document) 
 
         // Append the new element to the list.
         article_list.appendChild(elmnt);
@@ -441,7 +444,7 @@ function format_html_per_news_source(news_name,news_link,document) {
         console.log(news_link);
 
         // get new element for this news org
-        let elmnt = format_html_per_news_source(news_name,news_link,document) 
+        elmnt = format_html_per_news_source(news_name,news_link,document) 
 
         // Append the new element to the list.
         article_list.appendChild(elmnt);
@@ -460,7 +463,7 @@ function format_html_per_news_source(news_name,news_link,document) {
         console.log(news_link);
 
         // get new element for this news org
-        let elmnt = format_html_per_news_source(news_name,news_link,document) 
+        elmnt = format_html_per_news_source(news_name,news_link,document) 
 
         // Append the new element to the list.
         article_list.appendChild(elmnt);
@@ -478,7 +481,7 @@ function format_html_per_news_source(news_name,news_link,document) {
         console.log(news_link);
 
         // get new element for this news org
-        let elmnt = format_html_per_news_source(news_name,news_link,document) 
+        elmnt = format_html_per_news_source(news_name,news_link,document) 
 
         // Append the new element to the list.
         article_list.appendChild(elmnt);
@@ -496,7 +499,7 @@ function format_html_per_news_source(news_name,news_link,document) {
         console.log(news_link);
 
         // get new element for this news org
-        let elmnt = format_html_per_news_source(news_name,news_link,document) 
+        elmnt = format_html_per_news_source(news_name,news_link,document) 
 
         // Append the new element to the list.
         article_list.appendChild(elmnt);
@@ -514,7 +517,7 @@ function format_html_per_news_source(news_name,news_link,document) {
         console.log(news_link);
 
         // get new element for this news org
-        let elmnt = format_html_per_news_source(news_name,news_link,document) 
+        elmnt = format_html_per_news_source(news_name,news_link,document) 
 
         // Append the new element to the list.
         article_list.appendChild(elmnt);
@@ -532,7 +535,7 @@ function format_html_per_news_source(news_name,news_link,document) {
         console.log(news_link);
 
         // get new element for this news org
-        let elmnt = format_html_per_news_source(news_name,news_link,document) 
+        elmnt = format_html_per_news_source(news_name,news_link,document) 
 
         // Append the new element to the list.
         article_list.appendChild(elmnt);
@@ -550,7 +553,7 @@ function format_html_per_news_source(news_name,news_link,document) {
         console.log(news_link);
 
         // get new element for this news org
-        let elmnt = format_html_per_news_source(news_name,news_link,document) 
+        elmnt = format_html_per_news_source(news_name,news_link,document) 
 
         // Append the new element to the list.
         article_list.appendChild(elmnt);
@@ -568,7 +571,7 @@ function format_html_per_news_source(news_name,news_link,document) {
         console.log(news_link);
 
         // get new element for this news org
-        let elmnt = format_html_per_news_source(news_name,news_link,document) 
+        elmnt = format_html_per_news_source(news_name,news_link,document) 
 
         // Append the new element to the list.
         article_list.appendChild(elmnt);
@@ -586,7 +589,7 @@ function format_html_per_news_source(news_name,news_link,document) {
         console.log(news_link);
 
         // get new element for this news org
-        let elmnt = format_html_per_news_source(news_name,news_link,document) 
+        elmnt = format_html_per_news_source(news_name,news_link,document) 
 
         // Append the new element to the list.
         article_list.appendChild(elmnt);
@@ -604,7 +607,7 @@ function format_html_per_news_source(news_name,news_link,document) {
         console.log(news_link);
 
         // get new element for this news org
-        let elmnt = format_html_per_news_source(news_name,news_link,document) 
+        elmnt = format_html_per_news_source(news_name,news_link,document) 
 
         // Append the new element to the list.
         article_list.appendChild(elmnt);
@@ -622,7 +625,7 @@ function format_html_per_news_source(news_name,news_link,document) {
         console.log(news_link);
 
         // get new element for this news org
-        let elmnt = format_html_per_news_source(news_name,news_link,document) 
+        elmnt = format_html_per_news_source(news_name,news_link,document) 
 
         // Append the new element to the list.
         article_list.appendChild(elmnt);
@@ -637,7 +640,7 @@ function format_html_per_news_source(news_name,news_link,document) {
         console.log(news_link);
 
         // get new element for this news org
-        let elmnt = format_html_per_news_source(news_name,news_link,document) 
+        elmnt = format_html_per_news_source(news_name,news_link,document) 
 
         // Append the new element to the list.
         article_list.appendChild(elmnt);
@@ -653,7 +656,7 @@ function format_html_per_news_source(news_name,news_link,document) {
         console.log(news_link);
 
         // get new element for this news org
-        let elmnt = format_html_per_news_source(news_name,news_link,document) 
+        elmnt = format_html_per_news_source(news_name,news_link,document) 
 
         // Append the new element to the list.
         article_list.appendChild(elmnt);

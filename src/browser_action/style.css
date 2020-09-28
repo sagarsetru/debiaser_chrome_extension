@@ -101,7 +101,7 @@ h4 {
   text-decoration: none;
 }
 
-.name {
+.link {
   font-size: 20px;
   font-style: bold;
   background-color: white;
@@ -117,12 +117,13 @@ h4 {
 }
 .name:focus {outline:0;}
 
-.link {
+/* .link {
   font-size: 16px;
   background-color: white;
   color: #59337c;
   padding: 0px 10px 4px 10px;
-}
+} */
+
 .link a{
   
   background-color: white;
