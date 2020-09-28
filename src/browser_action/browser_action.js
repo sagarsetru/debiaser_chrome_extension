@@ -120,6 +120,23 @@ function format_html_per_news_source(news_name,news_link,document) {
 
 
 
+        let theatlantic = articles_json['theatlantic.com']
+
+        // set the news org info
+        var news_name = 'The Atlantic';
+        var news_link = theatlantic;
+
+        console.log(news_name);
+        console.log(news_link);
+
+        // get new element for this news org
+        elmnt = format_html_per_news_source(news_name,news_link,document) 
+
+        // Append the new element to the list.
+        article_list.appendChild(elmnt);
+
+
+
 
         let bbc = articles_json['bbc.com']
 
@@ -331,6 +348,40 @@ function format_html_per_news_source(news_name,news_link,document) {
         // set the news org info
         var news_name = 'Fox News';
         var news_link = foxnews;
+
+        console.log(news_name);
+        console.log(news_link);
+
+        // get new element for this news org
+        elmnt = format_html_per_news_source(news_name,news_link,document) 
+
+        // Append the new element to the list.
+        article_list.appendChild(elmnt);
+
+
+
+        let theguardian = articles_json['theguardian.com']
+
+        // set the news org info
+        var news_name = 'The Guardian';
+        var news_link = theguardian;
+
+        console.log(news_name);
+        console.log(news_link);
+
+        // get new element for this news org
+        elmnt = format_html_per_news_source(news_name,news_link,document) 
+
+        // Append the new element to the list.
+        article_list.appendChild(elmnt);
+
+
+
+        let thehill = articles_json['thehill.com']
+
+        // set the news org info
+        var news_name = 'The Hill';
+        var news_link = thehill;
 
         console.log(news_name);
         console.log(news_link);
@@ -594,56 +645,6 @@ function format_html_per_news_source(news_name,news_link,document) {
         // Append the new element to the list.
         article_list.appendChild(elmnt);
 
-
-
-
-        let theatlantic = articles_json['theatlantic.com']
-
-        // set the news org info
-        var news_name = 'The Atlantic';
-        var news_link = theatlantic;
-
-        console.log(news_name);
-        console.log(news_link);
-
-        // get new element for this news org
-        elmnt = format_html_per_news_source(news_name,news_link,document) 
-
-        // Append the new element to the list.
-        article_list.appendChild(elmnt);
-
-
-
-
-        let theguardian = articles_json['theguardian.com']
-
-        // set the news org info
-        var news_name = 'The Guardian';
-        var news_link = theguardian;
-
-        console.log(news_name);
-        console.log(news_link);
-
-        // get new element for this news org
-        elmnt = format_html_per_news_source(news_name,news_link,document) 
-
-        // Append the new element to the list.
-        article_list.appendChild(elmnt);
-
-        let thehill = articles_json['thehill.com']
-
-        // set the news org info
-        var news_name = 'The Hill';
-        var news_link = thehill;
-
-        console.log(news_name);
-        console.log(news_link);
-
-        // get new element for this news org
-        elmnt = format_html_per_news_source(news_name,news_link,document) 
-
-        // Append the new element to the list.
-        article_list.appendChild(elmnt);
 
 
         let wsj = articles_json['wsj.com']
