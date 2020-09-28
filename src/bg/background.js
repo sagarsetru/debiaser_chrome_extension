@@ -61,7 +61,7 @@ chrome.runtime.onMessage.addListener((msg, sender) => {
 	    console.log(to_api)
 
 		// summarize and send back
-		const api_url = 'https://us-central1-charityrecommender.cloudfunctions.net/recommend';
+		const api_url = 'https://us-central1-debiaser.cloudfunctions.net/return_suggested_articles';
 
 		fetch(api_url, {
 	  			method: 'POST',
@@ -70,7 +70,8 @@ chrome.runtime.onMessage.addListener((msg, sender) => {
 	  			})
 		.then(r => r.text())
 	 	.then(function(result) {
-	 		  console.log('charities found')
+			 //   console.log('charities found')
+			  console.log('articles found')
 	 		  console.log(result)	
 	 		  result_json = JSON.parse(result);
 	 		  console.log(result_json)
@@ -78,7 +79,7 @@ chrome.runtime.onMessage.addListener((msg, sender) => {
 
 	 		  	// Send to popup
 				chrome.runtime.sendMessage(
-				{subject: 'sendCharities',
+				{subject: 'sendArticles',
 				message: result_json}
 			);
 	 		})
