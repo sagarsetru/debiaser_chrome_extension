@@ -38,49 +38,6 @@ h4 {
   font-family: 'Open Sans', sans-serif;
 }
 
-/*charities {
-  list-style: none;
-  padding: 3px 0px 3px 0px;
-}
-
-.charities a {
-  font-size: 24px;
-  background-color: #CDCDCD;
-  color: hsl(0, 0%, 10%);
-  display: block;
-  text-decoration: none;
-}
-.charities li {
-  /*font-size: 14px;
-  font-size: 20px;
-  background-color: #CDCDCD;
-  color: hsl(0, 0%, 20%);
-  display: block;
-  padding: 8px 20px 8px 20px;
-  text-decoration: none;
-  border-bottom: 1px solid hsl(0, 0%, 80%);
-}
-
-.charities li:hover {
-  background-color: #CDCDCD;
-  text-decoration: none;
-}
-
-.charities ul {
-  background-color:#CDCDCD;
-  color: hsl(0, 0%, 20%);
-  display: block;
-  padding: 8px 20px 8px 20px;
-  text-decoration: none;
-  list-style-type: none
-/*  border-bottom: 1px solid hsl(0, 0%, 80%);
-}
-
-.charities ul:hover {
-  background-color: #E8D7F1;
-  text-decoration: none;
-}*/
-
 .article-content {
   display: none;
   position: absolute;
