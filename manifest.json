@@ -28,8 +28,7 @@
     "default_popup": "src/browser_action/popup.html"
   },
   "permissions": [
-    "tabs",
-    "webNavigation",
+    "activeTab",
     "https://us-central1-debiaser.cloudfunctions.net/return_suggested_articles"
   ]
 }
