@@ -70,7 +70,7 @@ function format_html_per_news_source(news_name,news_link,document) {
 
         // right center to right news sources
         var name = document.createElement("div");
-        name.innerHTML = "Right to right-center";
+        name.innerHTML = "Right to center-right";
         name.setAttribute("class", "name");
 
         var elmnt = document.createElement("div");;
@@ -239,7 +239,7 @@ function format_html_per_news_source(news_name,news_link,document) {
 
 
         var name = document.createElement("div");
-        name.innerHTML = "Left to left-center";
+        name.innerHTML = "Left to center-left";
         name.setAttribute("class", "name");
 
         var elmnt = document.createElement("div");;
